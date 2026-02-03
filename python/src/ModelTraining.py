@@ -27,8 +27,8 @@ def get_x_y(bad_folder, good_folder):
 
 
 def train_model():
-    bad_folder_train = '../../../../data/training/bad_training'
-    good_folder_train = '../../../../data/training/good'
+    bad_folder_train = '../data/training/bad_training'
+    good_folder_train = '../data/training/good'
     x_train, y_train = get_x_y(bad_folder_train, good_folder_train)
 
     mdl = LogisticRegression()
@@ -38,9 +38,9 @@ def train_model():
 
 def get_predictions(model, bad_folder_test=None, good_folder_test=None):
     if bad_folder_test is None:
-        bad_folder_test = '../../../../data/test/bad_test'
+        bad_folder_test = '../data/test/bad_test'
     if good_folder_test is None:
-        good_folder_test = '../../../../data/test/good_test'
+        good_folder_test = '../data/test/good'
 
     x_test, y_test = get_x_y(bad_folder_test, good_folder_test)
 
