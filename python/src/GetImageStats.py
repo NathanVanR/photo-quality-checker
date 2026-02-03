@@ -1,4 +1,3 @@
-# %%
 import cv2
 import numpy as np
 
@@ -22,5 +21,3 @@ def get_image_stats(img_path):
     saturation = np.mean(hsv[:, :, 1])
 
     return [sharpness, brightness, saturation]
-
-# %%
